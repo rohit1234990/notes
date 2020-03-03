@@ -1,0 +1,150 @@
+A closure is a function having access to the parent scope. It preserve the data from 
+outside.
+
+A closure is an inner funtion that has access to the outer (enclosing) function's variables.
+
+Every closure have three scopes:
+- Local Scope (Own scope)
+- Outer Functions Scope
+- Global Scope
+
+Here a closure being created, this is tripy example, concept is slight.
+
+var i = 10
+function show() {
+ var j = 20
+ console.log(j)
+ console.log(i)
+
+Here a closure is being created between show function scope and
+the global scope. Some people don't agree this is a closure.
+
+NESTED FUNCITON IS CLOSURE AND CLOSURE IS NESTED FUNCTION
+
+lets see an exaple
+
+function show() {
+ var j = "j is a local variable of outer"
+ console.log(j)
+ function innerFunk() {
+  var k = "k is inner variable of inner"
+  console.log(k)
+  }
+  innerFunk()
+}
+show()
+
+this time there is no closure, but as soon as we access something from 
+the outer function inside the inner function it becomes a closure.
+
+function show() {
+ var j = "j is a local variable of outer"
+ console.log(j)
+ function innerFunk() {
+  var k = "k is inner variable of inner"
+  console.log(k)
+  console.log(j)
+  }
+  innerFunk()
+}
+show()
+
+a closure is being created.
+
+Outer funciton can't access any of the inner function variables.
+
+
+
+KUDVENKAT
+----------
+function addNumbers(firstNumber, secondNumber) {
+	var returnValue = "Result is "
+	function add() {
+		return returnValue + (firstNumber + secondNumber)
+	}
+	return add()
+}
+
+var result = addNumber(1, 2)
+console.log(result)
+
+-- now if we remove the set of paranthesis after the add function
+function addNumbers(firstNumber, secondNumber) {
+	var returnValue = "Result is "
+	function add() {
+		return returnValue + (firstNumber + secondNumber)
+	}
+	return add
+}
+
+output ->
+function add() {
+		return returnValue + (firstNumber + secondNumber)
+	}
+
+We get inner funciton as output
+
+so we can do something like this
+
+result = addNumbers(10,20)
+result() 
+
+gives the same result
+
+
+Now, since we know that addNumbers function acually reaturn a function we can directly 
+execute while passin the parameters itself
+
+we can do something like this
+result = addNumbers(10,20)()
+
+we will get the result straight away
+
+
+Practical example
+I will write the same code in two different ways
+
+function outer() {
+  counter = 0
+  function inner() {
+    counter += 1
+    return counter
+  }
+  return inner
+}
+
+res = outer()
+console.log(res())
+console.log(res())
+console.log(res())
+console.log(res())
+
+we are using the outer function just as a cover and returing the function back which
+does all the job.
+
+So actually these function names doesn't matter at all because ultimately we are using
+only the variable res only.
+so we can create anonymous functions
+
+ye code analyze karo
+
+res = function () {
+    counter = 0
+    function inner() {
+      counter = counter + 1
+      return counter
+    }
+    return inner
+  }()
+  
+  
+  console.log(res())
+  console.log(res())
+  console.log(res())
+
+yahan par outer function ki hume sirf ek hi baar jarurat thi wo bhi counter variable ke liye
+to humne dono ko anonymous banaya aur outer wale ko self invocable banaya aur ja outer wala 
+pehli baar chala to inner ka reference bahar ek variable to pakda diya, ab us variable ke trough
+hum variable ki value increment karte reh sakte hain
+
+

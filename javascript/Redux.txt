@@ -1,0 +1,20 @@
+look through following stages
+specially subscriptions and provideers,
+and using substripton just for one component
+
+componetns --> dispatches --> action -- action reaches to --> Reducers--> reducers has power to change so they go to -->central store -> 
+after changes -> Triggers to --> subscription
+
+passes updtes states as props
+
+---------------
+Redux is a predictable state container for JS apps.
+Redux evolved from the ideas of flux
+
+Redux gives us single object with every piece of application sate in
+entire web application.
+
+the object which contain entire state of applicaton never gets modified
+Redux instead of modifying the state, it takes current state and do the necessary modificcation and returen entirely a new copy of state.
+So essentially we can go back and actually see the state after each and every canges happend(canges made after actions) 
+It makes understading and debugging apps easy.

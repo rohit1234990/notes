@@ -1,0 +1,17 @@
+React components has a built-in state object.
+The state object is where you store property values that belongs to the component.
+When the state object changes, the component re-renders.
+
+To change a value in the state object, use the this.setState() method.
+
+When a value in the state object changes, the component will re-render, meaning that the output will change according to the new value(s).
+
+Always use the setState() method to change the state object, it will ensure that the component knows its been updated and calls the render() method (and all the other lifecycle methods).
+
+
+setState() is the only legitimate way to update state after the initial state setup. Let’s say we have a search component and want to display the search term a user submits.
+
+When we change the state value using reconciliation, React take note of 
+what has changed from the last time and creates a new tree depending only
+upon what has changed from the previous state, it avoid unnecessary 
+modification of DOM

@@ -1,0 +1,5 @@
+some common error during es6 linting tutorial
+--  by doing this I will quickly know the correct way of doing it.
+    without dwelling into more video tutorails
+
+css positioning, z-index, centering the element to the page.

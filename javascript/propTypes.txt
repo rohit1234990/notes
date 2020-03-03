@@ -1,0 +1,7 @@
+React prop-types used for type checking in react
+It checks properties that we pass to a component to check their types 
+
+npm install --save prop-types
+import PropTypes from 'prop-types'
+
+

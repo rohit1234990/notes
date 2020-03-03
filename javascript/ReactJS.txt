@@ -1,0 +1,74 @@
+-React is a javascript library to build fast and interactive user
+interfaces. 
+-Developed at facebook.
+-At the heart of every react application are components:
+
+-- components is essentially a piece of usesr interface 
+-- components are reusable, each compnonent can be build independently
+   and in isolation.
+-- React componenet name must start with capital letter. 
+   If the component name does not start with a capital letter, the component use will be treated as a built-in element such as a div or span.
+-- while building a react applicaton we build a bunch of 
+   independent components in isolation and later combine them all.
+
+
+-- every react applicaton has at least one component known
+as root component.
+-- thus a react application is tree of components
+
+
+
+
+
+Props
+-----
+- short for properties. 
+- react allows us to pass information to component using props
+-Props are optional inputs that your component can accept
+- props enables a component to be dynamic
+-In ReactJS every component is treated as a pure javascript function.
+-In ReactJS props are equivalent to parameters of a pure javascript function.
+-Props are immutable. Because these are developed in the concept of pure functions. In pure functions we cannot change the data of parameters.  So, also cannot change the data of a prop in ReactJS.
+
+
+State
+------
+Every React component return JSX which describe the user interface
+We can influence what is being rendered on screen using props and state.
+
+Props vs state
+
+- props get passed to the components, while state is managed by the component
+- for anology think of props as a parameter passed to function, vs state are variables declated inside function
+- props are immutable, can't be modifed by the children
+-ultimately both props and state holds the information that influences the UI that
+is rendered in the browser.
+
+
+Side effect :-
+https://www.youtube.com/watch?v=fYbhD_KMCOg
+
+a function which modifies a global variable is with side effects,
+console log has side effects because it effets the console.
+A email sender has side effects
+or pushing an element to array which is declate outside of the funciton boundry and not passed as input to the function.
+one important point to note here is that we should not also modify our inputs, such as arrays to make them pure we should create new
+array and modify it and then return we want to treat our inputs as immutable to avoid side effects.
+Also to note here is if we call our function as arr = [1,2,3] add(arr, 4) it will always return [1,2,3,4] and this makes it pure.
+
+
+Deterministic funcions always returns same output for same input
+In non deterministic funtions output may change with input for example random number generator, or weather teller funciton on particular day, 
+
+When a function has no side effects and is deterministic - we call it PURE function.
+It is predictable, clean and transparent.
+Pure function on a system doen't depent on anything else by defination
+So the order they are called in doesn't matter, so its easy to make them work in parallel
+
+
+
+
+
+If your function depends on something that might or not happen and changes something outside its walls, then it suddenly depends on time. It now matters when in time does this function call happen.
+It becomes harder to think and test and work, because you have an additional dimention to think.
+

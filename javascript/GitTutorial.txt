@@ -1,0 +1,38 @@
+We have mainly three Areas -
+1. Working Area       2. Stagin Area      3. Local Repository
+
+git add -------->>> moves files from working area to staging areas
+
+git commit ------>>> git only takes changes from staging area and move to local repository
+                     changes present in working area are not considered.
+
+git push -------->>> takes all commits from local repository and push them to remote repository
+
+
+[ Origin points to a remote location]
+Origin is basically  an ALIAS to remote repository.
+====
+
+git remove -v ----------> to have a look what origin is pointing to
+
+[We can add remote]
+===================
+
+git remote add hari https:/dkfdkfkkfdfdkf/dfkdfkd/dfkdfk
+
+
+git fetch --------> pulls changes from remote but doesnt do auto merge
+
+git fetch origin master
+
+git merge ----------> merges changes from git fetch to local repository
+
+===================================================================================
+
+[Git HEAD]
+git head is a light weight pointer to recent commit in your branch
+
+git log ----------------> gives commit history of current branch
+                          HEAD point to latest commit in this branch
+
+

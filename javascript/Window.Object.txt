@@ -1,0 +1,18 @@
+Window object represents the browser's window or potentially frame, that a document is displayed in.
+--- hum pure brower window pe focus kar rahe hain winow object me
+--- effect humko pure broswer me milega
+
+As long as a browser window is open, even if no document is loaded in the window, the 
+window object is define in the current model in memory.
+
+All global Javascript variables, functions and objects automatically become members of the windows object.
+--------
+|window|
+--------
+   |
+   |
+   V
+----------
+|document|
+----------
+

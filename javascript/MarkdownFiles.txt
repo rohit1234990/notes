@@ -1,0 +1,117 @@
+VS Code
+Extension: Auto-Open Markdown Preview
+
+
+--Headings--
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+
+--Italics--
+we can use either *(astrics) or _ (underscore)
+
+*This text* is italics
+_This text_ is italics
+
+
+--strong--
+can use either **(double astrisk) or __(double underscore)
+
+**This text** is strong
+__This text__ is strong
+
+
+--strikethrough--
+we can use ~~(double tilde)
+
+~~This text~~ is strikethrough
+
+
+--horizontal rule--
+we can use ---(tiple hiphen) or ___(triple underscore)
+---
+___
+
+
+--use \ for escaping in case of * or others--
+
+
+
+
+--blockquote--
+we can use > (greater than sign)
+> This is a quote
+
+
+--Links--
+for links text goes in square brackets[] and link goes in paranthesis()
+
+[Rohit Kumar Portfolio](http://www.rohitkumar.com/resume.html)
+
+
+--unorderred lists--
+we can use *(single astrisk symbol)
+if we want nested list we can just tab and start over
+
+* Item 1
+* Item 2
+* Item 3 
+	* Subitem 1
+	* Subitem 2
+
+
+
+--ordered list--
+we can use 1 followed by .
+1. Item 1
+1. Item 2
+1. Item 3
+1. Item 4
+
+
+--inline code block--
+we can use `` (back ticks)
+
+`<p>This is a paragraph</p>`
+
+
+--images--
+same as links, preceded by !
+![Bengal Tigers](http://www.bengaltigers.com/tiger1.jpeg)
+
+
+
+--Github Specifics--
+
+Triple backtics for code blocks
+```
+```
+we can even specify the languge used for code blocks
+
+```bash
+sudo apt-get install vlc
+sudo apt-get install gcc
+```
+
+```javascript
+funciton add(a, b) {
+	return a + b
+}
+```
+
+--tables--
+|Name|Email			|
+|----|--------------|
+|John|john@gmail.com|
+|John|john@gmail.com|
+
+--tasklist--
+* [x] Task 1	- this task is completed
+* [x] Task 2	- this task is completed
+* [ ] Task 3	- this task is not completed
+
+
+
