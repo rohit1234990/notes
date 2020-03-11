@@ -1,0 +1,31 @@
+
+video https://www.youtube.com/watch?v=ZNbFagCBlwo
+
+What is npm ?
+
+
+stands for node package manager
+npm is two things :
+1. An online platform 
+2. command line tool
+
+
+command line tool helps in interacting with the online platform
+using it we can do:
+
+install and uninstall packages
+we can do version management
+we can do dependency management
+
+
+For npm to work we need node installed.
+once node is install go to terminal and do:
+node -v
+npm -v
+
+
+
+ 
+
+
+

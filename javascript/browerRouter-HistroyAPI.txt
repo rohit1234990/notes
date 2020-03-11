@@ -1,0 +1,68 @@
+Browser router & History API
+
+video1 : https://www.youtube.com/watch?v=Mo9wn8jS1F8
+video2 : https://www.youtube.com/watch?v=ABllxOcsPsc
+
+
+two main objects that make history API
+1. window.history
+2. window.location
+
+since they are under window object we can directly access them without writing the window keyword.
+
+print(location.href)
+will print the address bar content on the current page.
+
+Example url -- http: // sub.example.com :80 /path/filename.html #hash?query=string&num=1
+
+first one is protocol such as http or https
+- that define how information is passed between the server and the client
+
+sub.exapmle.com
+-sub is here a sub domain
+-sub domain can be a folder on the system
+
+read more about the subdomins, how to create, different types of sub domains.
+read about domain name resulution once again, how the http protocol works
+three way handshake
+
+
+example.com
+-is the domain name
+
+
+:80 is the port number
+
+example.com
+-this is the domain name
+
+
+we can also do location.username and location.password
+read about it.
+
+there is location.protocol (=http/https) and location.port (=80)
+location.pathname (=/path/filename.html)
+
+location.search (=?query=string&num=1) 
+location.hash (=#hash)
+it saves the id of an element on the page. If the content on the page is very large this one helps in scrlling the page to that particualtar elemetemet from where we want to read the content
+
+
+Histroy API
+
+it is like an array
+when we write a url in the address bar basically we are pushing that url into that array.
+
+using history.go() we have move forward or backwards
+history.go(-3)
+will go three address back
+
+history.forward()
+history.back()
+we can move forward or backward
+
+location.reload()
+reloads current url
+
+location.replace("http://www.google.com")
+replace the current url with the new one.

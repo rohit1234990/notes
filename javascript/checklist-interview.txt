@@ -3,3 +3,6 @@ some common error during es6 linting tutorial
     without dwelling into more video tutorails
 
 css positioning, z-index, centering the element to the page.
+
+
+different kind of lengths pixels, em all that
